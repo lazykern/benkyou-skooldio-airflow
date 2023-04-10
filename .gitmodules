@@ -1,0 +1,3 @@
+[submodule "data-pipelines-with-airflow"]
+	path = data-pipelines-with-airflow
+	url = https://github.com/zkan/data-pipelines-with-airflow
