@@ -9,3 +9,5 @@ logs/
 
 # Mac
 .DS_Store
+
+.env
