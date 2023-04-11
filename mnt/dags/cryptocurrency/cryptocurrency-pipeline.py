@@ -5,7 +5,7 @@ from airflow.operators.email import EmailOperator
 from airflow.operators.python import PythonOperator
 from airflow.providers.postgres.operators.postgres import PostgresOperator
 from airflow.utils import timezone
-from etl import download_file, fetch_ohlcv, load_data_into_db
+from cryptocurrency.etl import download_file, fetch_ohlcv, load_data_into_db
 
 default_args = {
     "owner": "phusitsom",
@@ -100,7 +100,7 @@ with DAG(
 
     email_notify_task = EmailOperator(
         task_id="email_notify",
-        to=["phusit.so@ku.th"],
+        to=["phusitsom@phusitsom.me"],
         subject="Loaded data into database successfully on {{ ds }}",
         html_content="Your pipeline has loaded data into database successfully on {{ ds }}",
     )
