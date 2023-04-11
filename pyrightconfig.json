@@ -1,0 +1,13 @@
+{
+  "executionEnvironments": [
+    {
+      "root": "mnt/dags"
+    },
+    {
+      "root": "mnt/plugins"
+    },
+    {
+      "root": "mnt/tests"
+    }
+  ]
+}
